@@ -1,7 +1,23 @@
-import Link from 'next/link';
+import AnimalCounter from '../components/AnimalCounter';
 
 export default function AnimalNumbersPage() {
-    const data = {
+    type AnimalData = {
+        title: string;
+        chickens?: string;
+        ducks?: string;
+        turkeys?: string;
+        wildCaught?: string;
+        farmed?: string;
+        note?: string;
+        total: string;
+    };
+
+    type GrandTotalData = {
+        land: string;
+        aquatic: string;
+    };
+
+    const data: { [key: string]: AnimalData | GrandTotalData } = {
         poultry: {
             title: '🐔 Poultry (Chickens, Ducks, Turkeys)',
             chickens: '~70–75 billion',
@@ -37,6 +53,14 @@ export default function AnimalNumbersPage() {
         { title: 'Our World in Data – Meat Production', url: 'https://ourworldindata.org/meat-production' },
     ];
 
+    const isAnimalData = (item: AnimalData | GrandTotalData): item is AnimalData => {
+        return 'title' in item && 'total' in item;
+    };
+
+    const poultryData = data.poultry as AnimalData;
+    const fishData = data.fish as AnimalData;
+    const grandTotalData = data.grandTotal as GrandTotalData;
+
     return (
         <main className="container mx-auto px-4 py-8 max-w-4xl">
             <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 text-red-700">Global Animal Numbers Killed for Food Annually</h1>
@@ -45,50 +69,51 @@ export default function AnimalNumbersPage() {
             </p>
 
             <div className="space-y-8">
-                {/* Poultry */}
-                <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-                    <h2 className="text-xl md:text-2xl font-semibold mb-4 text-orange-800">{data.poultry.title}</h2>
-                    <ul className="list-disc pl-6 space-y-1 text-gray-700">
-                        <li>Chickens: <span className="font-medium">{data.poultry.chickens}</span></li>
-                        <li>Ducks: <span className="font-medium">{data.poultry.ducks}</span></li>
-                        <li>Turkeys: <span className="font-medium">{data.poultry.turkeys}</span></li>
-                        <li className="pt-2 border-t border-gray-100 mt-2">Total Poultry: <span className="font-bold text-orange-900">{data.poultry.total}</span></li>
-                    </ul>
-                </div>
-
-                {/* Fish */}
-                <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-                    <h2 className="text-xl md:text-2xl font-semibold mb-4 text-blue-800">{data.fish.title}</h2>
-                    <ul className="list-disc pl-6 space-y-1 text-gray-700">
-                        <li>Wild-Caught Fish: <span className="font-medium">{data.fish.wildCaught}</span></li>
-                        <li>Farmed Fish: <span className="font-medium">{data.fish.farmed}</span></li>
-                        <li className="pt-2 border-t border-gray-100 mt-2">Total Fish: <span className="font-bold text-blue-900">{data.fish.total}</span></li>
-                        <li className="text-xs italic text-gray-500 mt-1">({data.fish.note})</li>
-                    </ul>
-                </div>
-
-                {/* Other Land Animals (Grid) */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <h2 className="text-2xl font-semibold text-center text-gray-800 pt-4">Land Animals (Excluding Poultry)</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {Object.entries(data)
-                        .filter(([key]) => !['poultry', 'fish', 'grandTotal'].includes(key))
-                        .map(([key, animal]) => (
-                            <div key={key} className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm text-center">
-                                <h3 className="text-lg font-semibold mb-2 text-gray-800">{animal.title}</h3>
-                                <p className="text-2xl font-bold text-red-700">{animal.total}</p>
-                            </div>
+                        .filter(([key, animalData]) =>
+                            !['poultry', 'fish', 'grandTotal'].includes(key) && isAnimalData(animalData)
+                        )
+                        .map(([key, animalData]) => (
+                            isAnimalData(animalData) && (
+                                <AnimalCounter
+                                    key={key}
+                                    title={animalData.title}
+                                    totalPerYearString={animalData.total}
+                                />
+                            )
                         ))}
                 </div>
 
-                {/* Grand Total */}
+                <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                    <h2 className="text-xl md:text-2xl font-semibold mb-4 text-orange-800">{poultryData.title}</h2>
+                    <ul className="list-disc pl-6 space-y-1 text-gray-700">
+                        <li>Chickens: <span className="font-medium">{poultryData.chickens}</span></li>
+                        <li>Ducks: <span className="font-medium">{poultryData.ducks}</span></li>
+                        <li>Turkeys: <span className="font-medium">{poultryData.turkeys}</span></li>
+                        <li className="pt-2 border-t border-gray-100 mt-2">Total Poultry: <span className="font-bold text-orange-900">{poultryData.total}</span></li>
+                    </ul>
+                </div>
+
+                <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                    <h2 className="text-xl md:text-2xl font-semibold mb-4 text-blue-800">{fishData.title}</h2>
+                    <ul className="list-disc pl-6 space-y-1 text-gray-700">
+                        <li>Wild-Caught Fish: <span className="font-medium">{fishData.wildCaught}</span></li>
+                        <li>Farmed Fish: <span className="font-medium">{fishData.farmed}</span></li>
+                        <li className="pt-2 border-t border-gray-100 mt-2">Total Fish: <span className="font-bold text-blue-900">{fishData.total}</span></li>
+                        <li className="text-xs italic text-gray-500 mt-1">({fishData.note})</li>
+                    </ul>
+                </div>
+
                 <div className="bg-red-50 border border-red-200 rounded-lg p-6 shadow-sm text-center mt-10">
                     <h2 className="text-xl md:text-2xl font-semibold mb-4 text-red-800">🧮 Total Estimated Animals Killed Annually</h2>
                     <div className="md:flex md:justify-center md:space-x-8 space-y-3 md:space-y-0">
-                        <p className="text-lg"><span className="font-bold">Land Animals:</span> <span className="text-red-900 font-semibold">{data.grandTotal.land}</span></p>
-                        <p className="text-lg"><span className="font-bold">Aquatic Animals:</span> <span className="text-blue-900 font-semibold">{data.grandTotal.aquatic}</span></p>
+                        <p className="text-lg"><span className="font-bold">Land Animals:</span> <span className="text-red-900 font-semibold">{grandTotalData.land}</span></p>
+                        <p className="text-lg"><span className="font-bold">Aquatic Animals:</span> <span className="text-blue-900 font-semibold">{grandTotalData.aquatic}</span></p>
                     </div>
                 </div>
 
-                {/* References */}
                 <div className="mt-12 pt-6 border-t border-gray-200">
                     <h3 className="text-lg font-semibold mb-3 text-gray-700 text-center">References</h3>
                     <ul className="text-center space-y-1 text-sm">

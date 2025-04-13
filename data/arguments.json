@@ -1,73 +1,93 @@
 [
     {
-        "id": "protein-deficiency",
-        "category": "health",
-        "claim": "You can't get enough protein on a vegan diet.",
-        "fact": "A well-planned vegan diet provides all essential amino acids and adequate protein levels. Foods like legumes, tofu, seitan, and quinoa are excellent sources of plant-based protein. The average vegan easily meets or exceeds daily protein requirements.",
-        "citations": [
-            {
-                "title": "Academy of Nutrition and Dietetics: Position on vegetarian diets",
-                "url": "https://pubmed.ncbi.nlm.nih.gov/27886704/"
-            },
-            {
-                "title": "Protein and amino acid contents in plant foods",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6893534/"
-            }
-        ]
-    },
-    {
-        "id": "plants-feel-pain",
+        "id": "veganism-kills-animals",
         "category": "ethics",
-        "claim": "Plants feel pain.",
-        "fact": "There's no scientific evidence that plants have nervous systems, pain receptors, or consciousness - all requirements for feeling pain. Plants respond to stimuli, but this is not the same as feeling pain or suffering.",
+        "claim": "veganism kills more animals through crop harvesting.",
+        "fact": "animal agriculture requires vastly more crops to feed livestock than would be needed to feed humans directly. a vegan diet actually requires less land and results in fewer total crop deaths than an omnivorous diet.",
         "citations": [
             {
-                "title": "Plant consciousness: do plants feel pain?",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8052213/"
-            },
-            {
-                "title": "Anesthetics and plants: no pain, no brain, and therefore no consciousness",
-                "url": "https://pubmed.ncbi.nlm.nih.gov/32880005/"
-            }
-        ]
-    },
-    {
-        "id": "b12-deficiency",
-        "category": "health",
-        "claim": "Vegans lack B12.",
-        "fact": "B12 supplements are recommended for vegans, just as they are for many people over 50 regardless of diet. Many foods are fortified with B12, and a properly planned vegan diet with supplementation provides adequate B12. Additionally, animals that omnivores eat are often fed B12 supplements.",
-        "citations": [
-            {
-                "title": "Vitamin B12 in the Vegan Diet",
-                "url": "https://veganhealth.org/vitamin-b12/"
-            },
-            {
-                "title": "What every vegan should know about vitamin B12",
-                "url": "https://veganhealth.org/vitamin-b12/what-every-vegan-should-know-about-vitamin-b12/"
-            }
-        ]
-    },
-    {
-        "id": "crop-deaths",
-        "category": "ethics",
-        "claim": "Veganism kills more animals through crop harvesting.",
-        "fact": "Animal agriculture requires vastly more crops to feed livestock than would be needed to feed humans directly. A vegan diet actually requires less land and results in fewer total crop deaths than an omnivorous diet.",
-        "citations": [
-            {
-                "title": "The opportunity cost of animal based diets exceeds all food losses",
+                "title": "the opportunity cost of animal based diets exceeds all food losses",
                 "url": "https://www.pnas.org/doi/10.1073/pnas.1713820115"
             }
         ]
     },
     {
-        "id": "environment-impact",
-        "category": "environment",
-        "claim": "Veganism doesn't make a difference for the environment.",
-        "fact": "Animal agriculture is a leading cause of greenhouse gas emissions, deforestation, water usage, and pollution. Research shows that plant-based diets can reduce your carbon footprint by up to 73%.",
+        "id": "veganism-elitist",
+        "category": "ethics",
+        "claim": "veganism is elitist and not accessible to everyone.",
+        "fact": "while access to diverse plant-based foods can vary, many staple vegan foods like legumes, grains, and vegetables are widely available and affordable. promoting plant-based diets can be inclusive and adapted to various cultural and socioeconomic contexts.",
         "citations": [
             {
-                "title": "Reducing food's environmental impacts through producers and consumers",
+                "title": "plant-based diets: a physician’s guide",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3662288/"
+            }
+        ]
+    },
+    {
+        "id": "dairy-humane",
+        "category": "ethics",
+        "claim": "dairy production is humane and doesn't harm animals.",
+        "fact": "dairy farming often involves practices like separating calves from mothers shortly after birth and culling male calves. these practices raise ethical concerns about animal welfare in the dairy industry.",
+        "citations": [
+            {
+                "title": "animal welfare in dairy production",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6627353/"
+            }
+        ]
+    },
+    {
+        "id": "veganism-insufficient",
+        "category": "environment",
+        "claim": "veganism alone won't solve environmental issues.",
+        "fact": "while no single action can address all environmental problems, adopting a plant-based diet is one of the most effective ways individuals can reduce their environmental footprint, including greenhouse gas emissions, land use, and water consumption.",
+        "citations": [
+            {
+                "title": "reducing food’s environmental impacts through producers and consumers",
                 "url": "https://science.sciencemag.org/content/360/6392/987"
+            }
+        ]
+    },
+    {
+        "id": "evolved-to-eat-meat",
+        "category": "health",
+        "claim": "humans evolved to eat meat, so it's natural and necessary.",
+        "fact": "the 'appeal to nature' fallacy (https://en.wikipedia.org/wiki/Appeal_to_nature) suggests that just because something is natural, it is not necessarily good or necessary. while humans are omnivorous and have historically consumed both plant and animal foods, modern nutritional science shows that a well-planned vegan diet can provide all essential nutrients. the 'naturalness' of meat consumption doesn't imply necessity or optimal health.",
+        "citations": [
+            {
+                "title": "position of the academy of nutrition and dietetics: vegetarian diets",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/27886704/"
+            }
+        ]
+    },
+    {
+        "id": "soy-estrogen",
+        "category": "health",
+        "claim": "soy increases estrogen levels and is harmful.",
+        "fact": "soy contains isoflavones, plant-derived compounds that can bind to estrogen receptors but have much weaker effects than human estrogen. studies indicate that moderate soy consumption does not increase estrogen levels in humans and may offer health benefits, such as reducing menopausal symptoms and lowering the risk of certain cancers.",
+        "citations": [
+            {
+                "title": "does eating soy increase estrogen and cause breast cancer?",
+                "url": "https://www.mskcc.org/news/does-eating-soy-increase-estrogen-and-cause-breast"
+            },
+            {
+                "title": "is soy bad for you? no, here's the research",
+                "url": "https://www.goodrx.com/well-being/diet-nutrition/debunked-myths-about-soy"
+            },
+            {
+                "title": "is soy good or bad for you? nutritionists settle the debate",
+                "url": "https://www.realsimple.com/is-soy-bad-for-you-8553142"
+            }
+        ]
+    },
+    {
+        "id": "local-meat-better",
+        "category": "environment",
+        "claim": "eating local meat is more sustainable than imported plant foods.",
+        "fact": "transportation contributes a very small fraction to food's total greenhouse gas emissions. the majority comes from production, especially in animal agriculture. plant-based diets generally have a lower environmental impact, even when considering transportation.",
+        "citations": [
+            {
+                "title": "food-miles and the relative climate impacts of food choices in the united states",
+                "url": "https://pubs.acs.org/doi/10.1021/es702969f"
             }
         ]
     }
