@@ -15,11 +15,15 @@
         "id": "veganism-elitist",
         "category": "ethics",
         "claim": "veganism is elitist and not accessible to everyone.",
-        "fact": "while access to diverse plant-based foods can vary, many staple vegan foods like legumes, grains, and vegetables are widely available and affordable. promoting plant-based diets can be inclusive and adapted to various cultural and socioeconomic contexts.",
+        "fact": "vegan diets are most often cheaper than omnivorous ones, saving individuals up to 19% on food costs. basic plant staples like legumes, grains, and vegetables are widely available and affordable across most regions. perceptions of elitism usually stem from marketing of premium vegan products, not the core diet itself. numerous community initiatives and government programs support access to plant-based foods, especially in underserved areas. with proper planning, a vegan diet is financially and logistically accessible to people from diverse socioeconomic backgrounds.",
         "citations": [
             {
                 "title": "plant-based diets: a physician’s guide",
                 "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3662288/"
+            },
+            {
+                "title": "eating vegan diet reduces grocery bill 16% savings more than $500 a year",
+                "url": "https://www.pcrm.org/news/news-releases/eating-vegan-diet-reduces-grocery-bill-16-savings-more-500-year-finds-new?utm_source=chatgpt.com"
             }
         ]
     },
@@ -27,7 +31,7 @@
         "id": "dairy-humane",
         "category": "ethics",
         "claim": "dairy production is humane and doesn't harm animals.",
-        "fact": "dairy farming often involves practices like separating calves from mothers shortly after birth and culling male calves. these practices raise ethical concerns about animal welfare in the dairy industry.",
+        "fact": "dairy farming routinely involves practices that raise serious ethical concerns. in nearly all commercial dairy operations, calves are separated from their mothers within hours or days after birth to maximize milk production for human consumption. this early separation is highly stressful for both cow and calf, often resulting in prolonged vocalizations, signs of distress, and elevated cortisol levels. male calves, who cannot produce milk and are considered less economically valuable, are frequently culled shortly after birth or sold into the veal industry, where they are confined and slaughtered at a young age. female calves are typically raised to replace their mothers in the cycle of forced impregnation and milk extraction. to maintain high yields, dairy cows are impregnated annually, leading to physical strain, mastitis (a painful udder infection), and shortened lifespans — typically just 4–6 years compared to their natural lifespan of 20 years. these practices are standard in both conventional and many so-called “humane” or “organic” dairy farms, underscoring systemic welfare issues embedded in the dairy industry.",
         "citations": [
             {
                 "title": "animal welfare in dairy production",
