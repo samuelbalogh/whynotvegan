@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
+import AnimalCounter from './components/AnimalCounter';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,6 +26,21 @@ export default function RootLayout({
                         </Link>
                     </div>
                 </nav>
+                <div className="container mx-auto px-4 pt-4 -mb-4 md:pt-6 md:-mb-6 flex justify-center">
+                    <div className="w-full max-w-xs space-y-2">
+                        <Link href="/animal-numbers" className="block hover:opacity-90 transition-opacity">
+                            <AnimalCounter
+                                title="Total Land Animals Killed"
+                                totalPerYearString="87.5 billion"
+                            />
+                        </Link>
+                        <div className="grid grid-cols-3 gap-2">
+                            <AnimalCounter title="🐷" totalPerYearString="1.5 billion" />
+                            <AnimalCounter title="🐄" totalPerYearString="300 million" />
+                            <AnimalCounter title="🐔" totalPerYearString="72.5 billion" />
+                        </div>
+                    </div>
+                </div>
                 <div className="py-8 md:py-12">
                     {children}
                 </div>

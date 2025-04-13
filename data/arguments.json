@@ -51,11 +51,15 @@
         "id": "evolved-to-eat-meat",
         "category": "health",
         "claim": "humans evolved to eat meat, so it's natural and necessary.",
-        "fact": "the 'appeal to nature' fallacy (https://en.wikipedia.org/wiki/Appeal_to_nature) suggests that just because something is natural, it is not necessarily good or necessary. while humans are omnivorous and have historically consumed both plant and animal foods, modern nutritional science shows that a well-planned vegan diet can provide all essential nutrients. the 'naturalness' of meat consumption doesn't imply necessity or optimal health.",
+        "fact": "this is the 'appeal to nature' fallacy - just because something is natural, it is not necessarily good or necessary. while humans are omnivorous and have historically consumed both plant and animal foods, modern nutritional science shows that a well-planned vegan diet can provide all essential nutrients. the 'naturalness' of meat consumption doesn't imply necessity or optimal health.",
         "citations": [
             {
                 "title": "position of the academy of nutrition and dietetics: vegetarian diets",
                 "url": "https://pubmed.ncbi.nlm.nih.gov/27886704/"
+            },
+            {
+                "title": "the appeal to nature fallacy",
+                "url": "https://en.wikipedia.org/wiki/Appeal_to_nature"
             }
         ]
     },

@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getArgumentById, getAllArguments } from '../../../lib/getArguments';
+import React from 'react';
+import LinkifyText from '../../../components/LinkifyText';
 
 export async function generateStaticParams() {
     const allArgs = getAllArguments();
@@ -53,11 +55,11 @@ export default async function ArgumentPage({
                     {formattedfact.length > 1 ? (
                         <ul className="list-disc space-y-1">
                             {formattedfact.map((point, index) => (
-                                <li key={index}>{point}</li>
+                                <li key={index}><LinkifyText text={point} /></li>
                             ))}
                         </ul>
                     ) : (
-                        <p>{argument.fact}</p>
+                        <p><LinkifyText text={argument.fact} /></p>
                     )}
                 </div>
             </div>

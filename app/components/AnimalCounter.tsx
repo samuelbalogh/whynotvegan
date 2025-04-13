@@ -26,6 +26,17 @@ const calculateRatePerSecond = (totalString: string): number => {
     return number / secondsPerYear;
 };
 
+// Function to format large numbers with suffixes
+const formatNumberWithSuffix = (num: number): string => {
+    if (num < 1000) return Math.floor(num).toString();
+    const suffixes = ['', 'K', 'M', 'B', 'T'];
+    const i = Math.floor(Math.log10(num) / 3);
+    const scaledNum = num / Math.pow(1000, i);
+    // Use 1 decimal place for K, M, B, T unless it's >= 100
+    const decimalPlaces = scaledNum < 100 ? 1 : 0;
+    return scaledNum.toFixed(decimalPlaces) + suffixes[i];
+};
+
 export default function AnimalCounter({ title, totalPerYearString }: AnimalCounterProps) {
     const ratePerSecond = calculateRatePerSecond(totalPerYearString);
     const [count, setCount] = useState(0);
@@ -35,20 +46,19 @@ export default function AnimalCounter({ title, totalPerYearString }: AnimalCount
 
         const interval = setInterval(() => {
             setCount(prevCount => prevCount + ratePerSecond);
-        }, 100); // Update every second
+        }, 100); // Update every 100ms
 
         return () => clearInterval(interval); // Cleanup on unmount
     }, [ratePerSecond]);
 
     return (
-        <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm text-center">
-            <h3 className="text-lg font-semibold mb-2 text-gray-800 h-12 flex items-center justify-center">{title}</h3>
-            <p className="text-3xl font-bold text-red-700 min-h-[40px]">
-                {/* Format to add commas and handle large numbers */}
-                {Math.floor(count).toLocaleString()}
+        <div className="bg-white border border-gray-200 rounded-lg p-3 shadow-sm text-center">
+            <h3 className="text-sm font-semibold mb-1 text-gray-700 h-8 flex items-center justify-center break-words">{title}</h3>
+            <p className="text-xl font-bold text-red-700 min-h-[28px]">
+                {formatNumberWithSuffix(count)}
             </p>
-            <p className="text-xs text-gray-500 mt-1">killed since page load</p>
-            <p className="text-xs text-gray-500">({ratePerSecond.toFixed(1)}/sec)</p>
+            <p className="text-[10px] text-gray-500 leading-tight mt-0.5">killed since load</p>
+            <p className="text-[10px] text-gray-500 leading-tight">({ratePerSecond.toFixed(1)}/sec)</p>
         </div>
     );
 }
