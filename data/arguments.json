@@ -18,7 +18,7 @@
         "fact": "vegan diets are most often cheaper than omnivorous ones, saving individuals up to 19% on food costs. basic plant staples like legumes, grains, and vegetables are widely available and affordable across most regions. perceptions of elitism usually stem from marketing of premium vegan products, not the core diet itself. numerous community initiatives and government programs support access to plant-based foods, especially in underserved areas. with proper planning, a vegan diet is financially and logistically accessible to people from diverse socioeconomic backgrounds.",
         "citations": [
             {
-                "title": "plant-based diets: a physician’s guide",
+                "title": "plant-based diets: a physician's guide",
                 "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3662288/"
             },
             {
@@ -31,7 +31,7 @@
         "id": "dairy-humane",
         "category": "ethics",
         "claim": "dairy production is humane and doesn't harm animals.",
-        "fact": "dairy farming routinely involves practices that raise serious ethical concerns. in nearly all commercial dairy operations, calves are separated from their mothers within hours or days after birth to maximize milk production for human consumption. this early separation is highly stressful for both cow and calf, often resulting in prolonged vocalizations, signs of distress, and elevated cortisol levels. male calves, who cannot produce milk and are considered less economically valuable, are frequently culled shortly after birth or sold into the veal industry, where they are confined and slaughtered at a young age. female calves are typically raised to replace their mothers in the cycle of forced impregnation and milk extraction. to maintain high yields, dairy cows are impregnated annually, leading to physical strain, mastitis (a painful udder infection), and shortened lifespans — typically just 4–6 years compared to their natural lifespan of 20 years. these practices are standard in both conventional and many so-called “humane” or “organic” dairy farms, underscoring systemic welfare issues embedded in the dairy industry.",
+        "fact": "dairy farming routinely involves practices that raise serious ethical concerns. in nearly all commercial dairy operations, calves are separated from their mothers within hours or days after birth to maximize milk production for human consumption. this early separation is highly stressful for both cow and calf, often resulting in prolonged vocalizations, signs of distress, and elevated cortisol levels. male calves, who cannot produce milk and are considered less economically valuable, are frequently culled shortly after birth or sold into the veal industry, where they are confined and slaughtered at a young age. female calves are typically raised to replace their mothers in the cycle of forced impregnation and milk extraction. to maintain high yields, dairy cows are impregnated annually, leading to physical strain, mastitis (a painful udder infection), and shortened lifespans — typically just 4–6 years compared to their natural lifespan of 20 years. these practices are standard in both conventional and many so-called "humane" or "organic" dairy farms, underscoring systemic welfare issues embedded in the dairy industry.",
         "citations": [
             {
                 "title": "animal welfare in dairy production",
@@ -46,7 +46,7 @@
         "fact": "while no single action can address all environmental problems, adopting a plant-based diet is one of the most effective ways individuals can reduce their environmental footprint, including greenhouse gas emissions, land use, and water consumption.",
         "citations": [
             {
-                "title": "reducing food’s environmental impacts through producers and consumers",
+                "title": "reducing food's environmental impacts through producers and consumers",
                 "url": "https://science.sciencemag.org/content/360/6392/987"
             }
         ]
@@ -96,6 +96,58 @@
             {
                 "title": "food-miles and the relative climate impacts of food choices in the united states",
                 "url": "https://pubs.acs.org/doi/10.1021/es702969f"
+            }
+        ]
+    },
+    {
+        "id": "protein-deficiency",
+        "category": "health",
+        "claim": "You can't get enough protein on a vegan diet.",
+        "fact": "A well-planned vegan diet provides all essential amino acids and adequate protein levels. Foods like legumes, tofu, seitan, and quinoa are excellent sources of plant-based protein. The average vegan easily meets or exceeds daily protein requirements.",
+        "citations": [
+            {
+                "title": "Academy of Nutrition and Dietetics: Position on vegetarian diets",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/27886704/"
+            },
+            {
+                "title": "Protein and amino acid content in selected plant foods",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6893534/"
+            }
+        ]
+    },
+    {
+        "id": "plants-feel-pain",
+        "category": "ethics",
+        "claim": "Plants feel pain.",
+        "fact": "There's no scientific evidence that plants have nervous systems, pain receptors, or consciousness - all requirements for feeling pain. Plants respond to stimuli, but this is not the same as feeling pain or suffering.",
+        "citations": [
+            {
+                "title": "Plant Consciousness: The Fascinating Evidence",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8052213/"
+            }
+        ]
+    },
+    {
+        "id": "b12-deficiency",
+        "category": "health",
+        "claim": "Vegans lack B12.",
+        "fact": "B12 supplements are recommended for vegans, just as they are for many people over 50 regardless of diet. Many vegan foods are fortified with B12, and a properly planned vegan diet with supplementation provides adequate B12.",
+        "citations": [
+            {
+                "title": "Vitamin B12 in the Vegan Diet",
+                "url": "https://veganhealth.org/vitamin-b12/"
+            }
+        ]
+    },
+    {
+        "id": "environment-impact",
+        "category": "environment",
+        "claim": "Veganism doesn't make a difference for the environment.",
+        "fact": "Animal agriculture is a leading cause of greenhouse gas emissions, deforestation, water usage, and pollution. Research shows that plant-based diets can reduce your carbon footprint by up to 73%.",
+        "citations": [
+            {
+                "title": "Reducing food's environmental impacts through producers and consumers",
+                "url": "https://science.sciencemag.org/content/360/6392/987"
             }
         ]
     }
