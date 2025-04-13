@@ -1,0 +1,69 @@
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { getArgumentsByCategory, getAllCategories } from '../../lib/getArguments';
+
+export function generateStaticParams() {
+    const categories = getAllCategories();
+    return categories.map((category) => ({ category }));
+}
+
+export default function CategoryPage({ params }: { params: { category: string } }) {
+    const { category } = params;
+    const categoryArgs = getArgumentsByCategory(category);
+    const allCategories = getAllCategories();
+
+    if (categoryArgs.length === 0) {
+        notFound();
+    }
+
+    return (
+        <main className="container mx-auto px-4 py-8">
+            <div className="mb-4">
+                <h1 className="text-2xl font-bold mb-2">
+                    Category: {category}
+                </h1>
+                <Link href="/" className="text-blue-600 hover:underline">
+                    ← Back to all categories
+                </Link>
+            </div>
+
+            <div className="flex flex-wrap gap-2 py-4 justify-center">
+                {allCategories.map((cat) => (
+                    <Link
+                        key={cat}
+                        href={`/${cat}`}
+                        className={`px-4 py-2 rounded-full ${cat === category
+                                ? 'bg-blue-600 text-white'
+                                : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+                            }`}
+                    >
+                        {cat}
+                    </Link>
+                ))}
+            </div>
+
+            <div className="mt-6">
+                {categoryArgs.map((argument) => (
+                    <div key={argument.id} className="border rounded-lg p-4 mb-4 shadow-sm">
+                        <h3 className="text-lg font-semibold mb-2">
+                            <span className="text-red-500 mr-2">❗</span>
+                            {argument.claim}
+                        </h3>
+                        <p className="mb-3">
+                            <span className="text-green-500 mr-2">✅</span>
+                            {argument.fact.length > 150
+                                ? `${argument.fact.substring(0, 150)}...`
+                                : argument.fact}
+                        </p>
+                        <Link
+                            href={`/argument/${argument.id}`}
+                            className="text-blue-600 hover:underline text-sm"
+                        >
+                            Read more
+                        </Link>
+                    </div>
+                ))}
+            </div>
+        </main>
+    );
+} 

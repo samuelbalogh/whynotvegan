@@ -1,0 +1,74 @@
+[
+    {
+        "id": "protein-deficiency",
+        "category": "health",
+        "claim": "You can't get enough protein on a vegan diet.",
+        "fact": "A well-planned vegan diet provides all essential amino acids and adequate protein levels. Foods like legumes, tofu, seitan, and quinoa are excellent sources of plant-based protein. The average vegan easily meets or exceeds daily protein requirements.",
+        "citations": [
+            {
+                "title": "Academy of Nutrition and Dietetics: Position on vegetarian diets",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/27886704/"
+            },
+            {
+                "title": "Protein and amino acid contents in plant foods",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6893534/"
+            }
+        ]
+    },
+    {
+        "id": "plants-feel-pain",
+        "category": "ethics",
+        "claim": "Plants feel pain.",
+        "fact": "There's no scientific evidence that plants have nervous systems, pain receptors, or consciousness - all requirements for feeling pain. Plants respond to stimuli, but this is not the same as feeling pain or suffering.",
+        "citations": [
+            {
+                "title": "Plant consciousness: do plants feel pain?",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8052213/"
+            },
+            {
+                "title": "Anesthetics and plants: no pain, no brain, and therefore no consciousness",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/32880005/"
+            }
+        ]
+    },
+    {
+        "id": "b12-deficiency",
+        "category": "health",
+        "claim": "Vegans lack B12.",
+        "fact": "B12 supplements are recommended for vegans, just as they are for many people over 50 regardless of diet. Many foods are fortified with B12, and a properly planned vegan diet with supplementation provides adequate B12. Additionally, animals that omnivores eat are often fed B12 supplements.",
+        "citations": [
+            {
+                "title": "Vitamin B12 in the Vegan Diet",
+                "url": "https://veganhealth.org/vitamin-b12/"
+            },
+            {
+                "title": "What every vegan should know about vitamin B12",
+                "url": "https://veganhealth.org/vitamin-b12/what-every-vegan-should-know-about-vitamin-b12/"
+            }
+        ]
+    },
+    {
+        "id": "crop-deaths",
+        "category": "ethics",
+        "claim": "Veganism kills more animals through crop harvesting.",
+        "fact": "Animal agriculture requires vastly more crops to feed livestock than would be needed to feed humans directly. A vegan diet actually requires less land and results in fewer total crop deaths than an omnivorous diet.",
+        "citations": [
+            {
+                "title": "The opportunity cost of animal based diets exceeds all food losses",
+                "url": "https://www.pnas.org/doi/10.1073/pnas.1713820115"
+            }
+        ]
+    },
+    {
+        "id": "environment-impact",
+        "category": "environment",
+        "claim": "Veganism doesn't make a difference for the environment.",
+        "fact": "Animal agriculture is a leading cause of greenhouse gas emissions, deforestation, water usage, and pollution. Research shows that plant-based diets can reduce your carbon footprint by up to 73%.",
+        "citations": [
+            {
+                "title": "Reducing food's environmental impacts through producers and consumers",
+                "url": "https://science.sciencemag.org/content/360/6392/987"
+            }
+        ]
+    }
+]

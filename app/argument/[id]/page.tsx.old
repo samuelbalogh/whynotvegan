@@ -1,0 +1,84 @@
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { getArgumentById, getAllArguments } from '../../../lib/getArguments';
+
+export function generateStaticParams() {
+    const allArgs = getAllArguments();
+    return allArgs.map((argument) => ({ id: argument.id }));
+}
+
+export default function ArgumentPage({ params }: { params: { id: string } }) {
+    const { id } = params;
+    const argument = getArgumentById(id);
+
+    if (!argument) {
+        notFound();
+    }
+
+    // Format the fact with bullet points if it contains multiple sentences
+    const formattedfact = argument.fact
+        .split('. ')
+        .filter(sentence => sentence.trim().length > 0)
+        .map(sentence => sentence.trim() + (sentence.endsWith('.') ? '' : '.'));
+
+    return (
+        <main className="container mx-auto px-4 py-8 max-w-3xl">
+            <div className="mb-6">
+                <h1 className="text-2xl font-bold mb-4 border-b pb-2">
+                    <span className="text-red-500 mr-2">❗</span>
+                    {argument.claim}
+                </h1>
+            </div>
+
+            <div className="mb-8">
+                <h2 className="text-xl font-semibold mb-3">
+                    <span className="text-green-500 mr-2">✅</span>
+                    fact:
+                </h2>
+                <div className="pl-4">
+                    {formattedfact.length > 1 ? (
+                        <ul className="list-disc pl-5 space-y-2">
+                            {formattedfact.map((point, index) => (
+                                <li key={index}>{point}</li>
+                            ))}
+                        </ul>
+                    ) : (
+                        <p>{argument.fact}</p>
+                    )}
+                </div>
+            </div>
+
+            {argument.citations.length > 0 && (
+                <div>
+                    <h2 className="text-xl font-semibold mb-3">
+                        <span className="mr-2">📚</span>
+                        Citations:
+                    </h2>
+                    <ul className="pl-4 space-y-2">
+                        {argument.citations.map((citation, index) => (
+                            <li key={index}>
+                                <a
+                                    href={citation.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-600 hover:underline"
+                                >
+                                    {citation.title}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            )}
+
+            <div className="mt-8">
+                <Link
+                    href={`/${argument.category}`}
+                    className="text-blue-600 hover:underline"
+                >
+                    ← Back to {argument.category}
+                </Link>
+            </div>
+        </main>
+    );
+} 
