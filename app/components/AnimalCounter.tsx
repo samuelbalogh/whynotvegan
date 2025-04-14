@@ -44,9 +44,11 @@ export default function AnimalCounter({ title, totalPerYearString }: AnimalCount
     useEffect(() => {
         if (ratePerSecond === 0) return;
 
+        const updateInterval = 100; // ms
+
         const interval = setInterval(() => {
-            setCount(prevCount => prevCount + ratePerSecond);
-        }, 100); // Update every 100ms
+            setCount(prevCount => prevCount + (ratePerSecond * (updateInterval / 1000)));
+        }, updateInterval); // Update every 100ms
 
         return () => clearInterval(interval); // Cleanup on unmount
     }, [ratePerSecond]);
@@ -58,7 +60,7 @@ export default function AnimalCounter({ title, totalPerYearString }: AnimalCount
                 {formatNumberWithSuffix(count)}
             </p>
             <p className="text-[10px] text-gray-500 leading-tight mt-0.5">killed since load</p>
-            <p className="text-[10px] text-gray-500 leading-tight">({Math.round(ratePerSecond / 10)}/sec)</p>
+            <p className="text-[10px] text-gray-500 leading-tight">({Math.round(ratePerSecond)}/sec)</p>
         </div>
     );
 }
