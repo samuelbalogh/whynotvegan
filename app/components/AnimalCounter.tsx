@@ -58,7 +58,7 @@ export default function AnimalCounter({ title, totalPerYearString }: AnimalCount
                 {formatNumberWithSuffix(count)}
             </p>
             <p className="text-[10px] text-gray-500 leading-tight mt-0.5">killed since load</p>
-            <p className="text-[10px] text-gray-500 leading-tight">({Math.round(ratePerSecond)}/sec)</p>
+            <p className="text-[10px] text-gray-500 leading-tight">({Math.round(ratePerSecond / 10)}/sec)</p>
         </div>
     );
 }
