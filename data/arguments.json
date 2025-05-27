@@ -150,5 +150,25 @@
                 "url": "https://science.sciencemag.org/content/360/6392/987"
             }
         ]
+    },
+    {
+        "id": "vegan-athlete-protein",
+        "category": "health",
+        "claim": "Vegan athletes can't get enough protein to build muscle or perform at a high level.",
+        "fact": "Multiple recent studies show that well-planned plant-based diets, when scaled to meet energy needs, provide all the protein and essential amino acids required for maximal muscle mass, strength, and athletic performance. Vegan athletes like Nimai Delgado have built world-class physiques and excelled in bodybuilding without ever eating animal products. Research in professional football players and bodybuilders found that plant-based diets easily meet or exceed the recommended 1.6–2.2 g/kg/day protein for athletes, and also provide sufficient leucine for muscle protein synthesis. The myth that vegan athletes can't get enough protein is not supported by science or real-world results.",
+        "citations": [
+            {
+                "title": "Protein Requirements for Maximal Muscle Mass and Athletic Performance Are Achieved with Completely Plant-Based Diets Scaled to Meet Energy Needs: A Modeling Study in Professional American Football Players",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11206900"
+            },
+            {
+                "title": "Can Athletes Get Enough Protein and Leucine on a Plant-based Diet? New Modeling Studies Say Yes",
+                "url": "https://switch4good.org/protein-and-leucine-on-a-plant-based-diet/"
+            },
+            {
+                "title": "Nimai Delgado – Professional Body Builder and Vegan Athlete",
+                "url": "https://theproof.com/nimai-delgado-professional-body-builder-and-vegan-athlete/"
+            }
+        ]
     }
 ]
