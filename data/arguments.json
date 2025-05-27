@@ -2,8 +2,8 @@
     {
         "id": "veganism-kills-animals",
         "category": "ethics",
-        "claim": "veganism kills more animals through crop harvesting.",
-        "fact": "animal agriculture requires vastly more crops to feed livestock than would be needed to feed humans directly. a vegan diet actually requires less land and results in fewer total crop deaths than an omnivorous diet.",
+        "claim": "Veganism kills more animals through crop harvesting.",
+        "fact": "Animal agriculture requires vastly more crops to feed livestock than would be needed to feed humans directly. a vegan diet actually requires less land and results in fewer total crop deaths than an omnivorous diet.",
         "citations": [
             {
                 "title": "the opportunity cost of animal based diets exceeds all food losses",
@@ -14,8 +14,8 @@
     {
         "id": "veganism-elitist",
         "category": "ethics",
-        "claim": "veganism is elitist and not accessible to everyone.",
-        "fact": "vegan diets are most often cheaper than omnivorous ones, saving individuals up to 19% on food costs. basic plant staples like legumes, grains, and vegetables are widely available and affordable across most regions. perceptions of elitism usually stem from marketing of premium vegan products, not the core diet itself. numerous community initiatives and government programs support access to plant-based foods, especially in underserved areas. with proper planning, a vegan diet is financially and logistically accessible to people from diverse socioeconomic backgrounds.",
+        "claim": "Veganism is elitist and not accessible to everyone.",
+        "fact": "Vegan diets are most often cheaper than omnivorous ones, saving individuals up to 19% on food costs. basic plant staples like legumes, grains, and vegetables are widely available and affordable across most regions. perceptions of elitism usually stem from marketing of premium vegan products, not the core diet itself. numerous community initiatives and government programs support access to plant-based foods, especially in underserved areas. with proper planning, a vegan diet is financially and logistically accessible to people from diverse socioeconomic backgrounds.",
         "citations": [
             {
                 "title": "plant-based diets: a physician's guide",
@@ -30,8 +30,8 @@
     {
         "id": "dairy-humane",
         "category": "ethics",
-        "claim": "dairy production is humane and doesn't harm animals.",
-        "fact": "dairy farming routinely involves practices that raise serious ethical concerns. in nearly all commercial dairy operations, calves are separated from their mothers within hours or days after birth to maximize milk production for human consumption. this early separation is highly stressful for both cow and calf, often resulting in prolonged vocalizations, signs of distress, and elevated cortisol levels. male calves, who cannot produce milk and are considered less economically valuable, are frequently culled shortly after birth or sold into the veal industry, where they are confined and slaughtered at a young age. female calves are typically raised to replace their mothers in the cycle of forced impregnation and milk extraction. to maintain high yields, dairy cows are impregnated annually, leading to physical strain, mastitis (a painful udder infection), and shortened lifespans — typically just 4–6 years compared to their natural lifespan of 20 years. these practices are standard in both conventional and many so-called 'humane' or 'organic' dairy farms, underscoring systemic welfare issues embedded in the dairy industry.",
+        "claim": "Dairy production is humane and doesn't harm animals.",
+        "fact": "Dairy farming routinely involves practices that raise serious ethical concerns. in nearly all commercial dairy operations, calves are separated from their mothers within hours or days after birth to maximize milk production for human consumption. this early separation is highly stressful for both cow and calf, often resulting in prolonged vocalizations, signs of distress, and elevated cortisol levels. male calves, who cannot produce milk and are considered less economically valuable, are frequently culled shortly after birth or sold into the veal industry, where they are confined and slaughtered at a young age. female calves are typically raised to replace their mothers in the cycle of forced impregnation and milk extraction. to maintain high yields, dairy cows are impregnated annually, leading to physical strain, mastitis (a painful udder infection), and shortened lifespans — typically just 4–6 years compared to their natural lifespan of 20 years. these practices are standard in both conventional and many so-called 'humane' or 'organic' dairy farms, underscoring systemic welfare issues embedded in the dairy industry.",
         "citations": [
             {
                 "title": "animal welfare in dairy production",
@@ -42,8 +42,8 @@
     {
         "id": "veganism-insufficient",
         "category": "environment",
-        "claim": "veganism alone won't solve environmental issues.",
-        "fact": "while no single action can address all environmental problems, adopting a plant-based diet is one of the most effective ways individuals can reduce their environmental footprint, including greenhouse gas emissions, land use, and water consumption.",
+        "claim": "Veganism alone won't solve environmental issues.",
+        "fact": "While no single action can address all environmental problems, adopting a plant-based diet is one of the most effective ways individuals can reduce their environmental footprint, including greenhouse gas emissions, land use, and water consumption.",
         "citations": [
             {
                 "title": "reducing food's environmental impacts through producers and consumers",
@@ -54,8 +54,8 @@
     {
         "id": "evolved-to-eat-meat",
         "category": "health",
-        "claim": "humans evolved to eat meat, so it's natural and necessary.",
-        "fact": "this is the 'appeal to nature' fallacy - just because something is natural, it is not necessarily good or necessary. while humans are omnivorous and have historically consumed both plant and animal foods, modern nutritional science shows that a well-planned vegan diet can provide all essential nutrients. the 'naturalness' of meat consumption doesn't imply necessity or optimal health.",
+        "claim": "Humans evolved to eat meat, so it's natural and necessary.",
+        "fact": "This is the 'appeal to nature' fallacy - just because something is natural, it is not necessarily good or necessary. while humans are omnivorous and have historically consumed both plant and animal foods, modern nutritional science shows that a well-planned vegan diet can provide all essential nutrients. the 'naturalness' of meat consumption doesn't imply necessity or optimal health.",
         "citations": [
             {
                 "title": "position of the academy of nutrition and dietetics: vegetarian diets",
@@ -70,8 +70,8 @@
     {
         "id": "soy-estrogen",
         "category": "health",
-        "claim": "soy increases estrogen levels and is harmful.",
-        "fact": "soy contains isoflavones, plant-derived compounds that can bind to estrogen receptors but have much weaker effects than human estrogen. studies indicate that moderate soy consumption does not increase estrogen levels in humans and may offer health benefits, such as reducing menopausal symptoms and lowering the risk of certain cancers.",
+        "claim": "Soy increases estrogen levels and is harmful.",
+        "fact": "Soy contains isoflavones, plant-derived compounds that can bind to estrogen receptors but have much weaker effects than human estrogen. studies indicate that moderate soy consumption does not increase estrogen levels in humans and may offer health benefits, such as reducing menopausal symptoms and lowering the risk of certain cancers.",
         "citations": [
             {
                 "title": "does eating soy increase estrogen and cause breast cancer?",
@@ -90,8 +90,8 @@
     {
         "id": "local-meat-better",
         "category": "environment",
-        "claim": "eating local meat is more sustainable than imported plant foods.",
-        "fact": "transportation contributes a very small fraction to food's total greenhouse gas emissions. the majority comes from production, especially in animal agriculture. plant-based diets generally have a lower environmental impact, even when considering transportation.",
+        "claim": "Eating local meat is more sustainable than imported plant foods.",
+        "fact": "Transportation contributes a very small fraction to food's total greenhouse gas emissions. the majority comes from production, especially in animal agriculture. plant-based diets generally have a lower environmental impact, even when considering transportation.",
         "citations": [
             {
                 "title": "food-miles and the relative climate impacts of food choices in the united states",
