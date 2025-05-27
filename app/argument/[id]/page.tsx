@@ -49,17 +49,17 @@ export default async function ArgumentPage({
             <div className="mb-10 bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
                 <h2 className="text-xl md:text-2xl font-semibold mb-4 flex items-center text-green-800">
                     <span className="text-green-600 mr-3 text-xl md:text-2xl">✅</span>
-                    fact
+                    Facts:
                 </h2>
                 <div className="prose prose-sm sm:prose-base max-w-none pl-10 text-gray-700">
                     {formattedfact.length > 1 ? (
                         <ul className="list-disc space-y-1">
                             {formattedfact.map((point, index) => (
-                                <li key={index}><LinkifyText text={point} /></li>
+                                <li key={index}><LinkifyText text={point.charAt(0).toUpperCase() + point.slice(1)} /></li>
                             ))}
                         </ul>
                     ) : (
-                        <p><LinkifyText text={argument.fact} /></p>
+                        <p><LinkifyText text={argument.fact.charAt(0).toUpperCase() + argument.fact.slice(1)} /></p>
                     )}
                 </div>
             </div>
