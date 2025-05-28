@@ -80,7 +80,9 @@ export default async function ArgumentPage({
                                     rel="noopener noreferrer"
                                     className="hover:underline hover:text-blue-900 transition-colors"
                                 >
-                                    {citation.title}
+                                    {citation.title.length > 80
+                                        ? `${citation.title.slice(0, 77)}...`
+                                        : citation.title}
                                 </a>
                             </li>
                         ))}

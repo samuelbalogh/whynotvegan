@@ -131,11 +131,15 @@
         "id": "b12-deficiency",
         "category": "health",
         "claim": "Vegans lack B12.",
-        "fact": "B12 supplements are recommended for vegans, just as they are for many people over 50 regardless of diet. Many vegan foods are fortified with B12, and a properly planned vegan diet with supplementation provides adequate B12.",
+        "fact": "B12 supplements are recommended for vegans, just as they are for many people over 50 regardless of diet. Many vegan foods are fortified with B12, and a properly planned vegan diet with supplementation provides adequate B12. Importantly, most livestock are also given B12 supplements because modern farming practices and diets do not provide enough naturally. Getting B12 directly is a more efficient use of resources than filtering it through animal agriculture.",
         "citations": [
             {
                 "title": "Vitamin B12 in the Vegan Diet",
                 "url": "https://veganhealth.org/vitamin-b12/"
+            },
+            {
+                "title": "Safety and efficacy of vitamin B12 (in the form of cyanocobalamin) produced by Ensifer spp. as a feed additive for all animal species based on a dossier submitted by VITAC EEIG",
+                "url": "https://www.efsa.europa.eu/en/efsajournal/pub/5336"
             }
         ]
     },
