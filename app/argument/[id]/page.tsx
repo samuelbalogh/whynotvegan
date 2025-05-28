@@ -34,10 +34,10 @@ export default async function ArgumentPage({
         <main className="container mx-auto px-4 py-8 max-w-3xl">
             <div className="mb-6 pb-4 border-b border-gray-200">
                 <Link
-                    href={`/${argument.category}`}
+                    href={`/`}
                     className="text-sm text-green-700 hover:underline capitalize mb-2 inline-block"
                 >
-                    ← Back to {argument.category}
+                    ← Back to all arguments
                 </Link>
                 <h1 className="text-2xl md:text-3xl font-bold flex items-start text-gray-800">
                     <span className="text-red-500 mr-3 pt-1 text-xl md:text-2xl">❗</span>

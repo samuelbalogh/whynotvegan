@@ -16,7 +16,9 @@ export default function ArgumentCard({
         <div className="border rounded-lg p-4 mb-4 shadow-sm">
             <h3 className="text-lg font-semibold mb-2">
                 <span className="text-red-500 mr-2">❗</span>
-                {argument.claim}
+                <Link href={`/argument/${argument.id}`} className="hover:underline text-inherit">
+                    {argument.claim}
+                </Link>
             </h3>
             <p className="mb-3">
                 <span className="text-green-500 mr-2">✅</span>
