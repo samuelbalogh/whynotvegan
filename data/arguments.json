@@ -12,6 +12,26 @@
         ]
     },
     {
+        "id": "veganism-not-enough-land",
+        "category": "environment",
+        "claim": "Veganism requires too much land.",
+        "fact": "Animal agriculture requires vastly more land to feed livestock than would be needed to feed humans directly. a vegan diet actually requires less land and results in fewer total crop deaths than an omnivorous diet.",
+        "citations": [
+            {
+                "title": "the opportunity cost of animal based diets exceeds all food losses",
+                "url": "https://www.pnas.org/doi/10.1073/pnas.1713820115"
+            },
+            {
+                "title": "If the world adopted a plant-based diet, we would reduce global agricultural land use from 4 to 1 billion hectares",
+                "url": "https://ourworldindata.org/land-use-diets"
+            },
+            {
+                "title": "land use for food production",
+                "url": "https://ourworldindata.org/grapher/land-use-kcal-poore"
+            }
+        ]
+    },
+    {
         "id": "veganism-elitist",
         "category": "ethics",
         "claim": "Veganism is elitist and not accessible to everyone.",
